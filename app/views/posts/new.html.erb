@@ -1,0 +1,8 @@
+<%= simple_form_for @post do |f| %>
+  
+  <%= f.file_field :image %>
+
+  <%= f.text_field :caption %>
+
+  <%= f.submit "Save Post", class: 'btn btn-outline-primary' %>
+<% end %>
