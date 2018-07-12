@@ -1,0 +1,11 @@
+<div class="text-center">
+  <%= image_tag @post.image.url(:medium) %>
+</div>
+
+<div class="form-wrapper">
+  
+  <div>
+    <%= render 'form', post: @post %>
+  </div>
+
+</div>
