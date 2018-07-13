@@ -28,11 +28,11 @@
       </div>
     </div>
     <div class="comment-like-form row">
-      <div class="like-button col-sm-11">
+      <div class="like-button col-sm-1">
         <span class="glyphicon glyphicon-heart-empty"></span>
       </div>
       <div class="comment-form col-sm-11">
-        <%= form_for [post, post.comments.new] do |f| %>
+        <%= form_for([post, post.comments.build], remote: true) do |f| %>
           <%= f.text_field :content, class: 'comment_content', id: "comment_content_#{post.id}", placeholder: 'Add a comment...' %>
         <% end %>
       </div>
