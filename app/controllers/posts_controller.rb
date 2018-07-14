@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   
 
   def index
-    @posts = Post.all
+    @posts = Post.all.order('created_at DESC').page params[:page]
   end
 
   def new
@@ -18,7 +18,7 @@ class PostsController < ApplicationController
     if @post.save
       flash[:success] = "Your post has been created"
     
-      redirect_to posts_path 
+      redirect_to root_path 
     else
       flash.now[:alert] = "Your new post couldn't be created. Please check the form."
       render :new
