@@ -59,3 +59,7 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 gem 'devise', '~> 4.4', '>= 4.4.3'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
 gem 'jquery-turbolinks', '~> 2.1'
+gem 'dotenv-rails', '~> 2.5'
+gem 'mini_magick', '~> 4.8'
+gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
+
