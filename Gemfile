@@ -63,3 +63,4 @@ gem 'dotenv-rails', '~> 2.5'
 gem 'mini_magick', '~> 4.8'
 gem 'aws-sdk', '~> 3.0', '>= 3.0.1'
 
+ruby "2.4.1"
